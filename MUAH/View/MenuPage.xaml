@@ -1020,7 +1020,7 @@
                     </Button.FocusVisualPrimaryBrush>
                 </Button>
             </RelativePanel>
-            <RelativePanel x:Name="pnlHovedret" HorizontalAlignment="Left" Height="758" VerticalAlignment="Top" Width="795" Background="#FFF7F7F7" Margin="30,30,-30,-30">
+            <RelativePanel x:Name="pnlHovedret" HorizontalAlignment="Left" Height="758" VerticalAlignment="Top" Width="795" Background="#FFF7F7F7" Margin="30,30,-30,-30" d:IsHidden="True">
                 <TextBlock x:Name="txtHovedretFlæskesteg" HorizontalAlignment="Left" Height="155" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Margin="56,406,-203,-541" FontSize="16" FontWeight="Bold">
                     <Run Text="Flæskesteg m. hvide og brune kartofler, rødkål, sovs og surt"/>
                     <LineBreak/>
@@ -1514,8 +1514,8 @@
                 <CheckBox x:Name="chkPastasalat" Content="" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="120" Margin="436,331,-436,-324"/>
                 <TextBlock x:Name="txtPastasalatNavn" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Margin="461,331,-634,-341" FontSize="24" FontWeight="Bold" Text="Pastasalat"/>
             </RelativePanel>
-            <RelativePanel x:Name="pnlDessert" HorizontalAlignment="Left" Height="758" VerticalAlignment="Top" Width="795" Margin="30,30,-30,-30" Background="#FFF7F7F7" d:IsHidden="True">
-                <TextBlock HorizontalAlignment="Left" Height="83" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Margin="40,63,-203,-125" FontSize="16" FontWeight="Bold">
+            <RelativePanel x:Name="pnlDessert" HorizontalAlignment="Left" Height="758" VerticalAlignment="Top" Width="795" Margin="30,30,-30,-30" Background="#FFF7F7F7">
+                <TextBlock HorizontalAlignment="Left" Height="83" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Margin="56,63,-203,-125" FontSize="16" FontWeight="Bold">
                     <Run Text="Gammeldags æblekage m. rasp, ribsgele og flødeskum"/>
                     <LineBreak/>
                     <Run/>
@@ -1610,6 +1610,7 @@
                     <Run Text="For alle forretter, hovedretter og desserter gælder minimum 10 kuverter"/>
                 </TextBlock>
                 <Button x:Name="btnTilføjTilKurvDessert" Content="Tilføj til kurv" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="170" Margin="580,716,-685,-716"/>
+                <CheckBox x:Name="chkDessertÆblekage" Content="" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="120" Margin="31,58,-25,-51" Click="ChkHvidvinslaks_Click_1"/>
             </RelativePanel>
         </RelativePanel>
         <Image x:Name="imgBrunch" HorizontalAlignment="Left" Height="205" Margin="497,187,0,0" VerticalAlignment="Top" Width="315" Source="ms-appx:///Assets/brunch 1.jpg" d:IsHidden="True"/>
